@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--Borja Estevez - CV -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,26 +10,42 @@
     <title>Tarea: Mi CV</title>
 
     <style>
+        main {
+            background-color: antiquewhite;
+            margin-left: 35%;
+            margin-right: 35%;
+        }
+
         h1 {
             text-align: center;
             color: coral;
         }
-        #subtitulo{
+
+        h2 {
+            color: coral;
+            background-color: antiquewhite;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        #subtitulo {
             text-align: left;
             margin-bottom: 15px;
         }
+
         span {
             background-color: aquamarine;
-            color:blue
+            color: blue
         }
 
         div {
-            display: flex;
+            display: inline-flex;
         }
 
         #caja1 {
+            box-sizing: border-box;
             width: 45%;
-            height: 100px;
+            height: 57px;
             overflow: hidden;
             margin-left: 10px;
             margin-right: 10px;
@@ -36,40 +54,86 @@
             margin-bottom: 10px;
 
 
+
         }
+
         #caja2 {
             width: 45%;
             height: 130px;
             overflow: visible;
             margin-left: 10px;
             margin-right: 10px;
+            margin-top: 1vh;
+            border-style: solid;
+            border-color:cadetblue;
+            font-size: 1.5vw;
+
+
+        }
+
+        section {
+            display: block;
+            color: teal;
+        }
+
+        ol {
+            color:aqua;
+
+        }
+        a{
+            color: white;
+        }
+
+
+        img {
+
+            height: 10%;
+            width: 5%;
+            padding-top: 2px;
+        }
+
+        #body {
+            background-image: url(https://media3.giphy.com/media/BHNfhgU63qrks/giphy.gif?cid=ecf05e47gb3ufyw567fnfjhuqmglc3ueteq39r72nx72gq01&rid=giphy.gif&ct=g);
+            background-size: cover;
+            height: 100vh;
+            scale: 75%;
+            padding: 1%;
 
         }
     </style>
 </head>
 
-<body>
+<body id="body">
+
     <main>
-        <h1>Mi curriculum</h1>
+        <h1><mark>Mi curriculum</mark></h1>
+
+
+    </main>
+    <header>
         <h2 id="subtitulo">
             Mis Estudios
         </h2>
-        
-    </main>
-
+    </header>
 
     <div>
 
-        <h3 id="caja1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aspernatur sequi excepturi ipsa,
+        <h3 id="caja1"><mark>ipsum dolor sit amet consectetur adipisicing elit.</mark> Veniam aspernatur sequi excepturi
+            ipsa,
             praesentium maiores autem facere, earum molestias repellendus cum nulla dolor quidem possimus aut dolore
             nisi? Magni, consectetur!</h2>
-        <h3 id="caja2"><span>Lorem ipsum, </span> dolor sit amet consectetur adipisicing elit. Dicta fugiat natus saepe sed enim in non mollitia
-            velit officia, nam maiores iusto, consequuntur alias, molestiae corporis tempore ad neque iste.</h2>
+            <h3 id="caja2"><span>Lorem ipsum, </span> dolor sit amet consectetur adipisicing elit. Dicta fugiat natus
+                saepe sed enim in non mollitia
+                velit officia, nam maiores iusto, consequuntur alias, molestiae corporis tempore ad neque iste.</h2>
     </div>
-    <a target = "_blank"href="https://media4.giphy.com/media/Cmr1OMJ2FN0B2/giphy.gif?cid=ecf05e47d9und7kjpx1wkb7mv9t2whdn0k5e4fr6zdz1og0d&rid=giphy.gif&ct=g">
-        Hola!
-    </a>
-    <img src="./giphy.gif"/>
+    <article>
+        <a target="_blank"
+            href="https://media4.giphy.com/media/Cmr1OMJ2FN0B2/giphy.gif?cid=ecf05e47d9und7kjpx1wkb7mv9t2whdn0k5e4fr6zdz1og0d&rid=giphy.gif&ct=g">
+            Hola!
+        </a>
+    </article>
+
+    <img src="./giphy2.gif" />
 
     <section>
         <h3>Dias del mes y Meses del año 😉</h3>
